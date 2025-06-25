@@ -1,0 +1,43 @@
+.modal-wrapper{
+    @apply flex flex-col items-center justify-center fixed top-0 right-0 left-0 bottom-0 bg-black-200 p-6 md:p-12.5 z-50;
+    z-index: 99;
+    .modal-main-wrap{
+        @apply flex flex-col w-full items-center justify-center;
+    }
+    .modal-close{
+        @apply absolute right-2 md:right-5 top-2 md:top-5 text-white hover:bg-black;
+    }
+    .modal-content-wrapper{
+        @apply flex w-full bg-white text-black overflow-y-auto max-h-[88vh] md:max-h-[85vh] rounded-xl;
+    }
+    &.modal-small{
+        .modal-content-wrapper{
+            @apply md:w-[500px];
+        }
+    }
+    &.modal-large{
+        .modal-content-wrapper{
+            @apply md:w-[800px];
+        }
+    }
+    &.modal-extra-large{
+        .modal-content-wrapper{
+            @apply md:w-[1100px];
+        }
+    }
+}
+.modal-wrapper{
+    &.modal-member-details{
+        @apply bg-white p-0 md:p-12.5 justify-start;
+        .modal-content-wrapper{
+            @apply relative max-h-screen md:max-h-[85vh];
+            .modal-close{
+                @apply  bg-black text-white hover:bg-primary hover:text-white w-11 h-11 z-10 right-6 top-6;
+                box-shadow: 0px 16px 20px 0px #00000040;
+                svg{
+                    @apply w-6 h-6;
+                }
+            }
+        }
+    }
+}

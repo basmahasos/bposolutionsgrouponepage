@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('/src/assets/font/gilroy/Gilroy-ExtraBold.otf') format('truetype');
+  font-weight: 800;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-size: 16px;
+  @apply scroll-smooth;
+}
+body{
+  @apply text-base font-body bg-light;
+}
+h1{
+  @apply flex text-4xl md:text-55 leading-10 md:leading-15 font-heading font-extrabold;
+}
+h2{
+  @apply font-heading font-extrabold text-40 leading-[120%] md:text-50 md:leading-12.5 text-black;
+  letter-spacing: 0.15px;
+}
+h3{
+  @apply font-heading text-2xl leading-full;
+}
+h4{
+  @apply font-heading;
+}
+h5{
+  @apply font-heading;
+}
+h6{
+  @apply font-heading;
+}
+.container{
+  @apply flex flex-col w-full max-w-[1120px] mx-auto;
+}
+.form-group{
+  @apply flex flex-col w-full gap-1 mb-2.5 relative;
+  .form-label{
+    @apply flex text-base font-medium leading-5 text-black-300/70;
+  }
+  .form-control{
+    @apply flex w-full h-10 border border-gray rounded py-2 px-3 text-black-400 text-sm font-semibold leading-5;
+  }
+  textarea.form-control{
+    @apply h-auto;
+  }
+  .message-error{
+    @apply flex items-center justify-end text-sm text-danger;
+  }
+}
+hr{
+  @apply border-primary border-t-4;
+}

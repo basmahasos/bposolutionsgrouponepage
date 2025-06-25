@@ -1,0 +1,21 @@
+.home-wrapper{
+    @apply flex flex-col w-full h-screen md:h-screen bg-black text-white bg-no-repeat bg-fixed bg-cover bg-[url('/bg-home-img.png')] pt-30;
+    background-position: top -82px right;
+    // .container{
+    //     @apply max-w-[940px];
+    // }
+    .home-caption-wrp{
+        @apply flex flex-col w-full md:mt-12 px-5;
+    }
+    .home-caption-content-wrp{
+        @apply flex flex-col w-full md:w-7/12;
+    }
+}
+@media screen and (max-width: 767px) {
+  .home-wrapper{
+    background-position: 50%;
+    &.landing-page-wrapper{
+      background-position: 50%;
+    }
+  }
+}

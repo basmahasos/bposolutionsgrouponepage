@@ -11,4 +11,4 @@ export default defineConfig({
   server: {
     allowedHosts: ['bposolutionsgroup.com']
   }
-)
+})

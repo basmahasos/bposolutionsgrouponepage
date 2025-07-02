@@ -9,6 +9,6 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
-    allowedHosts: ['bposolutionsgroup.com']
+    allowedHosts: ['bposolutionsgroup.com', 'www.bposolutionsgroup.com']
   }
 })

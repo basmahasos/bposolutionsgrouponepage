@@ -13,11 +13,11 @@ export default function Landing() {
             <div className="home-caption-wrp">
                 <div className="container">
                     <div className="home-caption-content-wrp">
-                        <h4 className="text-primary font-bold text-xl mb-0 leading-11">BPO Solutions Group</h4>
-                        <h1 className="">Outsource Experts in Scaling Operational Roles and Sales Teams</h1>
-                        <p className="pb-5 md:pr-10 mt-5 mb-2.5">Give us 15 minutes so we can demonstrate the abilities our clients tell their friends about.  We’re proud to be called the best seamless near-shore support solution in the United States and Mexico.</p>
+                        <h4 className="mb-0 text-xl font-bold text-primary leading-11">BPO Solutions Group</h4>
+                        <h1 className="">Outsource Staffing Experts in Scaling Operational Roles and Internal Teams</h1>
+                        <p className="pb-5 md:pr-10 mt-5 mb-2.5">We are a performance based international staffing company built and managed by proven USA executives. Give us 15 minutes and you'll see for yourself why our clients tell their friends and industry colleagues about our company. We’re proud to be called the best international staffing solution in the United States.</p>
                         <div className="flex">
-                            <Button type="button" large className="uppercase !font-semibold" text="SCHEDULE A MEETING" onClick={() => setIsOpenModal(true)} />
+                            <Button type="button" large className="uppercase !font-semibold" text="SCHEDULE" onClick={() => setIsOpenModal(true)} />
                         </div>
                     </div>
                     <AnimatePresence>
@@ -31,7 +31,7 @@ export default function Landing() {
                             </Modal>
                         )}
                     </AnimatePresence>
-                    <div className="flex items-center text-sm text-white mt-8 mb-5">Privacy by BPO Solutions Group 2020</div>
+                    <div className="flex items-center mt-8 mb-5 text-sm text-white">Privacy by BPO Solutions Group Corporation 2025</div>
                 </div>
             </div>
         </div>

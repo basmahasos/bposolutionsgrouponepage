@@ -1,7 +1,6 @@
 import * as Yup from "yup";
 import { useFormik } from 'formik';
 import Button from '../button/Button';
-import { motion } from "framer-motion";
 import {useRequestInfoForm} from "./requestInfoForm.hook.js";
 import useRegex from '../../hooks/regex.hook.js';
 
@@ -31,9 +30,9 @@ const RequestInfoForm = () => {
     if(isMailSent) {
         return (
             <motion.div
-                className="flex flex-col w-full gap-4 md:gap-8 px-8 md:px-10 py-6"
+                className="flex flex-col gap-4 px-8 py-6 w-full md:gap-8 md:px-10"
             >
-                <h3 className="text-28 font-extrabold text-black-300">THANK YOU!</h3>
+                <h3 className="font-extrabold text-28 text-black-300">THANK YOU!</h3>
                 <div>
                     Your note has been submitted, you will receive an appropriate response for your inquiry within the next business day.
                 </div>
@@ -42,9 +41,9 @@ const RequestInfoForm = () => {
     }
     return (
         <motion.div 
-            className="flex flex-col w-full gap-4 md:gap-8 px-8 md:px-10 py-6"
+            className="flex flex-col gap-4 px-8 py-6 w-full md:gap-8 md:px-10"
         >
-            <h3 className="text-28 font-extrabold text-black-300">Request info</h3>
+            <h3 className="font-extrabold text-28 text-black-300">Request info</h3>
             {error && (<div>{error}</div>)}
             <form onSubmit={formik.handleSubmit}>
                 <div className="form-group">
